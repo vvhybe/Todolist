@@ -1,0 +1,319 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+/* @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'); */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    background-image: var(--bg-img);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 
+:root{
+    --green: #14dc3c;
+    --red: #ff0033;
+    --bg: #ffffffa4;
+    --smoth-white: #F0F0F0;
+    --gray: #7D7E81;
+    --light-gray: #e4e3e3;
+    --smoth-gray: #e0e0e0;
+    --smoth-gray2: #dbdbdb;
+    --smoke-gray: #c7c7c7;
+    --smoke-gray2: #5F5F62;
+    --dark-gray: #0D0D0F;
+} */
+
+/* coral */
+/* :root{
+    --bg-img: url(../imgs/svg/BG/coral-bg.svg);
+
+    --pr-def-color: #ff6f61;
+    --pr-def-color-op:  #ff6f6165;
+    --pr-def-color-op1: #ff6f6150;
+    --pr-def-color-op2: #ff6f6134;
+    --pr-def-color-op3: #ff6f611f;
+    
+    --sc-def-color: #c44850;
+    --sc-def-color-op: #c4485065;
+    --sc-def-color-op1: #c4485050;
+    --sc-def-color-op2: #c4485034;
+    --sc-def-color-op3: #c448501f;
+    
+    --pr-drk-color: #7c1d37;
+    --pr-drk-color-op: #7c1d3765;
+    --pr-drk-color-op1: #7c1d3750;
+    --pr-drk-color-op2: #7c1d3734;
+    --pr-drk-color-op3: #7c1d371f;
+
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+
+} */
+
+/* Blue */
+/* :root{
+    --bg-img: url(../imgs/svg/BG/blue-bg.svg);
+
+    --pr-def-color: #609ffd;
+    --pr-def-color-op: #609ffd65;
+    --pr-def-color-op1: #609ffd50;
+    --pr-def-color-op2: #609ffd34;
+    --pr-def-color-op3: #609ffd1f;
+    
+    --sc-def-color: #4e89e2;
+    --sc-def-color-op: #4e89e265;
+    --sc-def-color-op1: #4e89e250;
+    --sc-def-color-op2: #4e89e234;
+    --sc-def-color-op3: #4e89e21f;
+    
+    --pr-drk-color: #1d377c;
+    --pr-drk-color-op: #1d447e65;
+    --pr-drk-color-op1: #1d447e50;
+    --pr-drk-color-op2: #1d447e34;
+    --pr-drk-color-op3: #1d447e1f;
+
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+} */
+
+/* Purpel */
+/* :root{
+    --bg-img: url(../imgs/svg/BG/purpel-bg.svg);
+
+    --pr-def-color: #9d5dfd;
+    --pr-def-color-op: #9d5dfd65;
+    --pr-def-color-op1: #9d5dfd50;
+    --pr-def-color-op2: #9d5dfd34;
+    --pr-def-color-op3: #9d5dfd1f;
+    
+    --sc-def-color: #7e46d1;
+    --sc-def-color-op: #7e46d165;
+    --sc-def-color-op1: #7e46d150;
+    --sc-def-color-op2: #7e46d134;
+    --sc-def-color-op3: #7e46d11f;
+    
+    --pr-drk-color: #441d7e;
+    --pr-drk-color-op: #441d7e65;
+    --pr-drk-color-op1: #441d7e50;
+    --pr-drk-color-op2: #441d7e34;
+    --pr-drk-color-op3: #441d7e1f;
+
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+} */
+
+/* Black */
+/* :root{
+    --bg-img: url(../imgs/svg/BG/black-bg.svg);
+
+    --pr-def-color: #5a595c;
+    --pr-def-color-op: #5a595c65;
+    --pr-def-color-op1: #5a595c50;
+    --pr-def-color-op2: #5a595c34;
+    --pr-def-color-op3: #5a595c1f;
+    
+    --sc-def-color: #6b6b6b;
+    --sc-def-color-op: #8e8e8f65;
+    --sc-def-color-op1: #8e8e8f50;
+    --sc-def-color-op2: #8e8e8f34;
+    --sc-def-color-op3: #8e8e8f1f;
+    
+    --pr-drk-color: #141414;
+    --pr-drk-color-op: #14141465;
+    --pr-drk-color-op1: #14141450;
+    --pr-drk-color-op2: #14141434;
+    --pr-drk-color-op3: #1414141f;
+
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+} */
+
+
+/* Keppel */
+/* :root{
+    --bg-img: url(../imgs/svg/BG/keppel-bg.svg);
+    
+    --pr-def-color: #38a3a5;
+    --pr-def-color-op: #38a3a565;
+    --pr-def-color-op1: #38a3a550;
+    --pr-def-color-op2: #38a3a534;
+    --pr-def-color-op3: #38a3a51f;
+    
+    --sc-def-color: #2b9092;
+    --sc-def-color-op: #2b909265;
+    --sc-def-color-op1: #2b909250;
+    --sc-def-color-op2: #2b909234;
+    --sc-def-color-op3: #2b90921f;
+    
+    --pr-drk-color: #135152;
+    --pr-drk-color-op: #13515265;
+    --pr-drk-color-op1: #13515250;
+    --pr-drk-color-op2: #13515234;
+    --pr-drk-color-op3: #1351521f;
+    
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+} */
+
+/* gray */
+:root{
+    --bg-img: url(../../public/imgs/BG/gray-bg.svg);
+
+    --pr-def-color: #979797;
+    --pr-def-color-op: #97979765;
+    --pr-def-color-op1: #97979750;
+    --pr-def-color-op2: #97979734;
+    --pr-def-color-op3: #9797971f;
+    
+    --sc-def-color: #727171;
+    --sc-def-color-op: #72717165; 
+    --sc-def-color-op1: #72717150;
+    --sc-def-color-op2: #72717134;
+    --sc-def-color-op3: #7271711f;
+    
+    --pr-drk-color: #434343;
+    --pr-drk-color-op: #43434365;
+    --pr-drk-color-op1: #43434350;
+    --pr-drk-color-op2: #43434334;
+    --pr-drk-color-op3: #4343431f;
+
+    --placeholder: #d1d1d1e1;
+    --bx-shadow: #1d1d1d34;
+    --shared-bx-shadow:0 0 2px 1px var(--bx-shadow);
+}
+
+@font-face {
+    font-family: Poppins;
+    src:url("../../public/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: whybe;
+    src:url("../../public/fonts/signature/signature.ttf");
+}
+
+*::-moz-selection{
+    color: white !important;
+    background: var(--pr-def-color) !important;
+}
+
+*::selection{
+    color: white !important;
+    background: var(--pr-def-color) !important;
+    border-radius: 4px !important;
+}
+
+*{
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+*::-webkit-scrollbar{
+    width: 4px;
+    display: none;
+}
+
+*::-webkit-scrollbar-button{
+    display: none;
+}
+
+*::-webkit-scrollbar-track{
+    color: none;
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: gray;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+input::placeholder{
+    color: var(--placeholder);
+}
+
+button{
+    box-shadow: var(--shared-bx-shadow);
+    cursor: pointer;
+}
+
+.author{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+.author a{
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    font-family: whybe;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--pr-drk-color);
+    transition: all .2s ease-in-out;
+}
+
+.author a span{
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: -12%;
+    right: -3%;
+    font-size: 1.8rem;
+    color: var(--pr-drk-color-op);
+    transition: all .2s ease-in-out;
+}
+
+.author a::before{
+    position: absolute;
+    content: '';
+    bottom: -5%;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--sc-def-color);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.author a:is(:hover, :active, :focus) span{
+    color: var(--pr-drk-color);
+}
+.author a:is(:hover, :active, :focus)::before{
+    width: 100%;
+}
+
+/* Mobile version */
+@media screen and (max-device-width: 480px){
+    .author{
+        top: 2%;
+        left: 2%;
+    }
+}

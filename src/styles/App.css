@@ -1,0 +1,298 @@
+.todolist{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    height: 80vh;
+    width: 50vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--pr-drk-color-op);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px var(--bx-shadow);
+}
+
+.todolist .tdlinput{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    /* background-color: aqua; */
+}
+
+.todolist .tdlinput input{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 18vw;
+    color: white;
+    padding: 8px 50px 8px 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    min-width: 140px;
+    background-color: var(--pr-def-color-op2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 2px 1px var(--bx-shadow);
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.todolist .tdlinput button{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--pr-def-color-op2);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.todolist .tdlinput .addTodo{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 29%;
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(0) rotate(45deg);
+    background-size: 18px;
+    background-image: url(../../public/imgs/icons/cross-small.svg);
+    background-color: var(--pr-drk-color);
+}
+
+.tdlinput button:not(:disabled):active{
+    transform: scale(.8) rotate(0deg);
+}
+
+.todolist .tdlinput input:not(:placeholder-shown) + .addTodo{
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+}
+
+.todolist .tdlinput .cmpltallTodos{
+    cursor: not-allowed;
+    background-size: 20px;
+    background-image: url(../../public/imgs/icons/list-check.svg);    
+}
+
+.todolist .tdlinput .delTodo{
+    cursor: not-allowed;
+    background-size: 20px;
+    background-image: url(../../public/imgs/icons/trash.svg);
+}
+
+.todolist .tdlinput .delTodo:not(:disabled){
+    cursor: pointer;
+    background-color: var(--sc-def-color);
+}
+.todolist .tdlinput .cmpltallTodos:not(:disabled){
+    cursor: pointer;
+    background-color: var(--sc-def-color);
+}
+
+.todolist ul{
+    position: relative;
+    height: 88%;
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll !important;
+}
+
+.todolist .tdltask li{
+    margin: 0;
+    position: relative;
+    height: 50px;
+    min-height: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--sc-def-color);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 4px 2px var(--bx-shadow);
+    animation: scale-popUP .1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform .1s ease-in;
+}
+
+.todolist .tdltask li::before{
+    position: absolute;
+    content: '';
+    left: 2%;
+    height: 70%;
+    width: 4px;
+    border-radius: 25px;
+    background-color: var(--pr-drk-color);
+    z-index: 2;
+}
+
+li.completed::before{
+    background-color: var(--pr-def-color) !important;
+}
+
+@keyframes scale-popUP {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    40%{
+        transform: scale(.4);
+        opacity: .4;
+        
+    }
+    80%{
+        transform: scale(.8);
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.tdltask li:is(:hover, :active, :focus){
+    transform: scale(1.02) !important;
+    box-shadow: 0 0 4px 3px var(--smoth-gray2);
+}
+
+li .taskinfo{
+    position: relative;
+    height: 100%;
+    width: 85%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li .taskinfo h4, li .taskinfo input{
+    outline: none;
+    border: none;
+    height: 28px;
+    color: white;
+    background: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 0 5px; 
+    text-transform: capitalize;
+    font-weight: 450;
+    font-size: 1.01rem;
+}
+
+li .taskinfo h4.completed{
+    text-decoration: line-through;
+    color: var(--pr-def-color);
+}
+
+li:has(.taskinfo h4.completed){
+    outline: none;
+    background-color: var(--pr-drk-color-op2);
+}
+
+li .taskinfo input:focus{
+    text-decoration: none !important;
+    border: 1.4px dashed var(--pr-drk-color-op);
+    background-color: var(--pr-drk-color-op3);
+    cursor: text;
+}
+
+li .taskinfo span{
+    outline: none;
+    font-weight: 450;
+    font-size: .6rem;
+    color: var(--placeholder);
+}
+
+li  .actBtns{
+    position: relative;
+    margin: 0 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.actBtns button{
+    height: 25px;
+    width: 25px;
+    border: none;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pr-drk-color);
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(0);
+    cursor: pointer;
+    transition: all .1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.actBtns .delCrntTodo{
+    background-image: url(../../public/imgs/icons/cross-small.svg);
+}
+.actBtns .renmeCrntTodo{
+    background-size: 12px;
+    background-image: url(../../public/imgs/icons/pencil.svg);
+    animation-delay: .6s;
+}
+
+li.completed .actBtns button{
+    background-color: var(--pr-def-color);
+}
+
+li:hover .actBtns button, .actBtns button:is(:focus, :active){
+    animation: delay-popup .1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes delay-popup {
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Mobile version */
+@media screen and (max-device-width: 480px){
+    .todolist{
+        top: 11%;
+        width: 340px !important;
+    }
+    .todolist .tdlinput .addTodo{
+        right: 34%;
+    }
+    li .taskinfo{
+        gap: 6px;
+        width: 72%;
+    }
+    li .taskinfo input{
+        width: 134px;
+    }
+    li .taskinfo span{
+        font-size: .45rem;
+    }
+    .todolist .tdltask li::before{
+        left: 3%;
+    }
+}
+

@@ -1,0 +1,125 @@
+[
+    {
+        "name": "gray",
+       
+        "--pr-def-color": "#979797",
+        "--sc-def-color": "#727171",
+        "--pr-drk-color": "#434343",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"black",
+        
+        "--pr-def-color": "#5a595c",
+        "--sc-def-color": "#6b6b6b",
+        "--pr-drk-color": "#141414",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"purpel",
+
+        
+        "--pr-def-color": "#9d5dfd",
+        "--sc-def-color": "#7e46d1",
+        "--pr-drk-color": "#441d7e",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"pink",
+       
+        "--pr-def-color": "#cc2769",
+        "--sc-def-color": "#9a1a4d",
+        "--pr-drk-color": "#641534",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"blue",
+       
+        "--pr-def-color": "#609ffd",
+        "--sc-def-color": "#4e89e2",
+        "--pr-drk-color": "#1d377c",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"keppel",
+
+        
+        "--pr-def-color": "#38a3a5",
+        "--sc-def-color": "#2b9092",
+        "--pr-drk-color": "#135152",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"coral",
+        
+        "--pr-def-color": "#c4483c",
+        "--sc-def-color": "#b6463c",
+        "--pr-drk-color": "#68192e",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"brown",
+        
+        "--pr-def-color": "#916e53",
+        "--sc-def-color": "#755944",
+        "--pr-drk-color": "#483426",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"moss",
+        
+        "--pr-def-color": "#808341",
+        "--sc-def-color": "#717335",
+        "--pr-drk-color": "#424328",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"aqua",
+        
+        "--pr-def-color": "#75b3a6",
+        "--sc-def-color": "#59988b",
+        "--pr-drk-color": "#3a6058",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    },
+    {
+        "name":"peru",
+        
+        "--pr-def-color": "#b9822f",
+        "--sc-def-color": "#b7812f",
+        "--pr-drk-color": "#755423",
+
+        "--placeholder": "#d1d1d1e1",
+        "--bx-shadow": "#1d1d1d34",
+        "--shared-bx-shadow": "0 0 2px 1px var(--bx-shadow)"
+    }
+]

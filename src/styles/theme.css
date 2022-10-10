@@ -1,0 +1,70 @@
+.theme{
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.theme .themeBtn{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--sc-def-color);
+    background-image: url(../../public/imgs/icons/theme.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.themeBtn:active{
+    transform: scale(.9);
+}
+
+.theme .themes{
+    position: relative;
+    height: 30px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px;
+    background-color: var(--sc-def-color-op1);
+    opacity: 0;
+    transform: translateX(120%);
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.theme .themes button{
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: var(--sc-def-color-op1);
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.theme .themes button:is(:hover, :active){
+    transform: scale(1.2);
+}
+
+.theme .themes button.currentTheme{
+    border: 1.3px solid white;
+}
+
+.theme .themes.activeThemes{
+    opacity: 1;
+    transform: translateX(0%);
+}
+/* 
+.theme .themeBtn:focus-within + .themes, .theme .themes:has(button:is(:hover, :active)){
+    opacity: 1;
+    transform: translateX(0%);
+} */
