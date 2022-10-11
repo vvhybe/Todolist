@@ -186,6 +186,7 @@ li .taskinfo h4, li .taskinfo input{
     outline: none;
     border: none;
     height: 28px;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,7 +287,6 @@ li:hover .actBtns button, .actBtns button:is(:focus, :active){
     }
     li .taskinfo{
         gap: 6px;
-        background-color: burlywood !important;
     }
     li .taskinfo h4, li .taskinfo input{
         margin-left: 20px;
