@@ -221,7 +221,7 @@ li .taskinfo span{
 }
 
 li  .actBtns{
-    position: relative;
+    position: absolute;
     margin: 0 10px 0 20px;
     display: flex;
     justify-content: center;
