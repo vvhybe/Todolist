@@ -63,8 +63,9 @@
     opacity: 1;
     transform: translateX(0%);
 }
-/* 
-.theme .themeBtn:focus-within + .themes, .theme .themes:has(button:is(:hover, :active)){
-    opacity: 1;
-    transform: translateX(0%);
-} */
+
+@media screen and (max-device-width: 480px){
+    .theme{
+        bottom: 2% !important;
+    }
+}

@@ -316,4 +316,7 @@ button{
         bottom: 2%;
         left: 2%;
     }
+    .author a{
+        font-size: 1.3rem;
+    }
 }
