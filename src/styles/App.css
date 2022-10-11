@@ -175,7 +175,7 @@ li.completed::before{
 li .taskinfo{
     position: relative;
     height: 100%;
-    width: 80%;
+    width: 85%;
     margin: 0;
     display: flex;
     justify-content: space-between;
