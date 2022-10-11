@@ -1,7 +1,31 @@
 import React, {useState, useEffect, useRef} from 'react';
 import themes from '../api/themes.json';
 
+import  aqua from '../imgs/BG/aqua-bg.svg';
+import  black from '../imgs/BG/black-bg.svg';
+import  blue from '../imgs/BG/blue-bg.svg';
+import  brown from '../imgs/BG/brown-bg.svg';
+import  coral from '../imgs/BG/coral-bg.svg';
 import gray from '../imgs/BG/gray-bg.svg';
+import keppel from '../imgs/BG/keppel-bg.svg';
+import moss from '../imgs/BG/moss-bg.svg';
+import peru from '../imgs/BG/peru-bg.svg';
+import pink from '../imgs/BG/pink-bg.svg';
+import purpel from '../imgs/BG/purpel-bg.svg';
+
+const BGimgs = {
+    "aqua":aqua,
+    "black":black,
+    "blue":blue,
+    "brown":brown,
+    "coral":coral,
+    "gray":gray,
+    "keppel":keppel,
+    "moss":moss,
+    "peru":peru,
+    "pink":pink,
+    "purpel":purpel
+};
 
 export default function Theme() {
     const theme = localStorage.getItem("theme");
@@ -29,8 +53,8 @@ export default function Theme() {
         const CSSthemeValues= Object.values(themeProperties);
         
         metaTheme.setAttribute("content", styleRoot.style.getPropertyValue("--pr-def-color"));
-        // styleRoot.style.setProperty("--bg-img", `url(../imgs/BG/${currentTheme}-bg.svg)`);
-        styleRoot.style.setProperty("--bg-img", `url(${gray})`);
+        styleRoot.style.setProperty("--bg-img", `url(${BGimgs[currentTheme]})`);
+    
 
         // CSS :root pr/sc-def/drk-color + op + op1 + op2 + op3 
         for (let clr = 1; clr < 4; clr++) {
