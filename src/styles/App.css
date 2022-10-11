@@ -227,6 +227,7 @@ li  .actBtns{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    background-color: chartreuse;
 }
 
 .actBtns button{
