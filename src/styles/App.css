@@ -122,7 +122,7 @@
     min-height: 50px;
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     background-color: var(--sc-def-color);
@@ -222,7 +222,7 @@ li .taskinfo span{
 
 li  .actBtns{
     position: absolute;
-    margin: 0 10px 0 20px;
+    right: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
