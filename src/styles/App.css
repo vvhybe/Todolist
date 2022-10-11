@@ -187,13 +187,13 @@ li .taskinfo h4, li .taskinfo input{
     outline: none;
     border: none;
     height: 28px;
+    display: flex;
     color: white;
     background: none;
     background-color: blue !important;
     border-radius: 5px;
     margin-left: 30px;
     padding: 0 5px; 
-    text-align: center;
     text-transform: capitalize;
     font-weight: 450;
     font-size: 1.01rem;
