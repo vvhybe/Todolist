@@ -275,7 +275,7 @@ li:hover .actBtns button, .actBtns button:is(:focus, :active){
 /* Mobile version */
 @media screen and (max-device-width: 480px){
     .todolist{
-        transform: translate(-50%, -48%);
+        transform: translate(-50%, -47%);
         width: 340px !important;
     }
     .todolist .tdlinput .addTodo{
