@@ -69,7 +69,7 @@
     border-radius: 50%;
     transform: scale(0) rotate(45deg);
     background-size: 18px;
-    background-image: url(../../public/imgs/icons/cross-small.svg);
+    background-image: url(../imgs/icons/cross-small.svg);
     background-color: var(--pr-drk-color);
 }
 
@@ -85,13 +85,13 @@
 .todolist .tdlinput .cmpltallTodos{
     cursor: not-allowed;
     background-size: 20px;
-    background-image: url(../../public/imgs/icons/list-check.svg);    
+    background-image: url(../imgs/icons/list-check.svg);    
 }
 
 .todolist .tdlinput .delTodo{
     cursor: not-allowed;
     background-size: 20px;
-    background-image: url(../../public/imgs/icons/trash.svg);
+    background-image: url(../imgs/icons/trash.svg);
 }
 
 .todolist .tdlinput .delTodo:not(:disabled){
@@ -252,11 +252,11 @@ li  .actBtns{
 }
 
 .actBtns .delCrntTodo{
-    background-image: url(../../public/imgs/icons/cross-small.svg);
+    background-image: url(../imgs/icons/cross-small.svg);
 }
 .actBtns .renmeCrntTodo{
     background-size: 12px;
-    background-image: url(../../public/imgs/icons/pencil.svg);
+    background-image: url(../imgs/icons/pencil.svg);
     animation-delay: .6s;
 }
 
