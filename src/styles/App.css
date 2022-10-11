@@ -188,6 +188,8 @@ li .taskinfo h4, li .taskinfo input{
     border: none;
     height: 28px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background: none;
     background-color: blue !important;
