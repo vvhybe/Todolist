@@ -313,7 +313,7 @@ button{
 /* Mobile version */
 @media screen and (max-device-width: 480px){
     .author{
-        bottom: 2%;
+        bottom: 1%;
         left: 2%;
         z-index: 10;
     }
