@@ -9,7 +9,7 @@ export default function ToDoList() {
 
     useEffect(()=>{
         const localTodos = JSON.parse(localStorage.getItem('todos'));
-        if(localTodos.length > 0){
+        if(localTodos){
             setTodos(localTodos)
             localStorage.setItem('todos',"");
         };
