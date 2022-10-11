@@ -174,7 +174,8 @@ body {
 
 /* gray */
 :root{
-    --bg-img: url(../imgs/BG/gray-bg.svg);
+    /* --bg-img: url(../imgs/BG/gray-bg.svg); */
+    --bg-img: url(static/media/gray-bg.svg);
     
     --pr-def-color: #979797;
     --pr-def-color-op: #97979765;
