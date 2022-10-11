@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import themes from '../api/themes.json';
 
+import gray from '../imgs/BG/gray-bg.svg';
 
 export default function Theme() {
     const theme = localStorage.getItem("theme");
@@ -28,7 +29,8 @@ export default function Theme() {
         const CSSthemeValues= Object.values(themeProperties);
         
         metaTheme.setAttribute("content", styleRoot.style.getPropertyValue("--pr-def-color"));
-        styleRoot.style.setProperty("--bg-img", `url(../imgs/BG/${currentTheme}-bg.svg)`);
+        // styleRoot.style.setProperty("--bg-img", `url(../imgs/BG/${currentTheme}-bg.svg)`);
+        styleRoot.style.setProperty("--bg-img", `url(${gray})`);
 
         // CSS :root pr/sc-def/drk-color + op + op1 + op2 + op3 
         for (let clr = 1; clr < 4; clr++) {
