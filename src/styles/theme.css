@@ -66,6 +66,7 @@
 
 @media screen and (max-device-width: 480px){
     .theme{
-        top: 98%;
+        top: 94%;
+        z-index: 10;
     }
 }
