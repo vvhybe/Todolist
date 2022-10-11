@@ -122,7 +122,7 @@
     min-height: 50px;
     width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     background-color: var(--sc-def-color);
@@ -180,6 +180,7 @@ li .taskinfo{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: aqua !important;
 }
 
 li .taskinfo h4, li .taskinfo input{
@@ -285,7 +286,6 @@ li:hover .actBtns button, .actBtns button:is(:focus, :active){
     li .taskinfo{
         gap: 6px;
         width: 100%;
-        background-color: aqua !important;
     }
     li .taskinfo input{
         /* width: 134px; */
