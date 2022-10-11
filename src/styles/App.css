@@ -286,7 +286,10 @@ li:hover .actBtns button, .actBtns button:is(:focus, :active){
     }
     li .taskinfo{
         gap: 6px;
-        width: 100%;
+        width: 90%;
+    }
+    li .taskinfo h4, li .taskinfo input{
+        margin-left: 20px;
     }
     li .taskinfo span{
         font-size: .45rem;
