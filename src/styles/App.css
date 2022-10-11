@@ -178,7 +178,7 @@ li .taskinfo{
     width: 85%;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: aqua !important;
 }
@@ -189,6 +189,7 @@ li .taskinfo h4, li .taskinfo input{
     height: 28px;
     color: white;
     background: none;
+    background-color: blue !important;
     border-radius: 5px;
     margin-left: 30px;
     padding: 0 5px; 
