@@ -175,10 +175,10 @@ li.completed::before{
 li .taskinfo{
     position: relative;
     height: 100%;
-    width: 85%;
+    width: 80%;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: aqua !important;
 }
@@ -193,6 +193,7 @@ li .taskinfo h4, li .taskinfo input{
     border-radius: 5px;
     margin-left: 30px;
     padding: 0 5px; 
+    text-align: center;
     text-transform: capitalize;
     font-weight: 450;
     font-size: 1.01rem;
