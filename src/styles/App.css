@@ -284,6 +284,7 @@ li:hover .actBtns button, .actBtns button:is(:focus, :active){
     li .taskinfo{
         gap: 6px;
         width: 72%;
+        background-color: aqua;
     }
     li .taskinfo input{
         width: 134px;
