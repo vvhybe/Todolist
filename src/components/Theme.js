@@ -28,7 +28,7 @@ export default function Theme() {
         const CSSthemeValues= Object.values(themeProperties);
         
         metaTheme.setAttribute("content", styleRoot.style.getPropertyValue("--pr-def-color"));
-        styleRoot.style.setProperty("--bg-img", `url(imgs/BG/${currentTheme}-bg.svg)`);
+        styleRoot.style.setProperty("--bg-img", `url(../../public/imgs/BG/${currentTheme}-bg.svg)`);
 
         // CSS :root pr/sc-def/drk-color + op + op1 + op2 + op3 
         for (let clr = 1; clr < 4; clr++) {
