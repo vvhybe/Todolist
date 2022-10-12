@@ -52,10 +52,8 @@ export default function Theme() {
         const CSSthemeProperties = Object.keys(themeProperties);
         const CSSthemeValues= Object.values(themeProperties);
         
-        metaTheme.setAttribute("content", styleRoot.style.getPropertyValue("--pr-def-color"));
         styleRoot.style.setProperty("--bg-img", `url(${BGimgs[currentTheme]})`);
-    
-
+        
         // CSS :root pr/sc-def/drk-color + op + op1 + op2 + op3 
         for (let clr = 1; clr < 4; clr++) {
             styleRoot.style.setProperty(CSSthemeProperties[clr], CSSthemeValues[clr]);
@@ -73,7 +71,8 @@ export default function Theme() {
             styleRoot.style.setProperty(propertiesThemeCSS[bxshd], valuesThemeCSS[bxshd]);
         }
         
-
+        // changing the meta theme;
+        metaTheme.setAttribute("content", styleRoot.style.getPropertyValue("--pr-drk-color"));
     },[currentTheme]);
 
     // close the Themes by losing the focus on it/ clicking outside of it

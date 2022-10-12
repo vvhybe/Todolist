@@ -47,7 +47,7 @@
     border: none;
     height: 18px;
     width: 18px;
-    border-radius: 50%;
+    border-radius: 18px;
     background-color: var(--sc-def-color-op1);
     transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
 }
