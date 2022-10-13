@@ -4,7 +4,7 @@
 
 ## overview:
 
-Simple `TodoList App` using [`Create React App`](https://github.com/facebook/create-react-app) ⚛️ with `theme feature:`.\
+Simple `TodoList App` using [`Create React App`](https://github.com/facebook/create-react-app) ⚛️ with `theme feature:`
 
 ### `Themes used:`
 
@@ -20,7 +20,7 @@ Simple `TodoList App` using [`Create React App`](https://github.com/facebook/cre
 - ![#cc2769](https://www.iconsdb.com/icons/download/color/cc2769/circle-16.png) `Pink`.
 - ![#9d5dfd](https://www.iconsdb.com/icons/download/color/9d5dfd/circle-16.png) `Purpel`.
 
-Developed By ![@whybe7] 👌.
+Developed By `@whybe7` 👌.
 
 ## Available Scripts
 
